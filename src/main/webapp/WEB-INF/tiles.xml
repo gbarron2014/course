@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Definición base para páginas -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/templates/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/templates/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/templates/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/templates/footer.jsp" />
+	</definition>
+
+	<definition name="base-definition-error"
+		template="/WEB-INF/views/tiles/templates/layoutError.jsp">
+		<put-attribute name="title" value="Error en el servidor" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/templates/footer.jsp" />
+	</definition>
+
+	<!-- Error Page -->
+	<definition name="errorPage" extends="base-definition-error">
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/templates/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/errorPage.jsp" />
+	</definition>
+
+
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title"
+			value="Taller de Integradora" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/home.jsp" />
+	</definition>
+
+	<!-- Welcome Page -->
+	<definition name="welcome" extends="base-definition">
+		<put-attribute name="title"
+			value="Taller de Integradora" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+
+	<definition name="usarios" extends="base-definition">
+		<put-attribute name="title" value="Listado de Usuarios" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/usuarios.jsp" />
+	</definition>
+
+	<!-- Definición de estudiantes -->
+	<!-- Listado de estudiantes -->
+	<definition name="listEstudiante" extends="base-definition">
+		<put-attribute name="title"
+			value="Listado de Estudiantes" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/estudiante/list.jsp" />
+	</definition>
+	<!-- Agregar estudiante  -->
+	<definition name="addEstudiante" extends="base-definition">
+		<put-attribute name="title"
+			value="Agregando un estudiante" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/estudiante/add.jsp" />
+	</definition>
+
+</tiles-definitions>
