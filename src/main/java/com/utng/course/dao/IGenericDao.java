@@ -1,4 +1,4 @@
-package com.utng.integradora.dao;
+package com.utng.course.dao;
 
 import java.util.List;
 

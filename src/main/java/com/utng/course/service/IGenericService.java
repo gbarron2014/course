@@ -1,4 +1,4 @@
-package com.utng.integradora.service;
+package com.utng.course.service;
 
 import java.util.List;
 

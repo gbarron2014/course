@@ -1,4 +1,4 @@
-package com.utng.integradora.controller;
+package com.utng.course.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.utng.integradora.entity.Usuario;
+import com.utng.course.entity.Usuario;
 
 /**
  * 	Descripcion:	Maneja peticiones de pantalla de Login.

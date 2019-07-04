@@ -1,4 +1,4 @@
-package com.utng.integradora.dao;
+package com.utng.course.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

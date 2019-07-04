@@ -1,4 +1,4 @@
-package com.utng.integradora.entity;
+package com.utng.course.entity;
 
 import java.io.Serializable;
 

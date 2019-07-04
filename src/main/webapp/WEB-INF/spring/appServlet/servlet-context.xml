@@ -16,7 +16,7 @@
 
 	<!-- Ruta para los controladores -->
 	<context:component-scan
-		base-package="com.utng.integradora" />
+		base-package="com.utng.course" />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
 		up static resources in the ${webappRoot}/resources directory -->

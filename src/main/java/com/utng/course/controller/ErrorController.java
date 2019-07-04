@@ -1,4 +1,4 @@
-package com.utng.integradora.controller;
+package com.utng.course.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

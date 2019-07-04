@@ -1,25 +1,22 @@
-package com.utng.integradora.controller;
+package com.utng.course.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
-
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.utng.integradora.entity.Estudiante;
-import com.utng.integradora.service.IEstudianteService;
+import com.utng.course.entity.Estudiante;
+import com.utng.course.service.IEstudianteService;
 
 @Controller
-@RequestMapping("/estudiante")
+@RequestMapping("/estudiante") 
 public class EstudianteController {
 
 	@Autowired(required = true)
@@ -42,8 +39,6 @@ public class EstudianteController {
 		return "listEstudiante"; // la vista a invocar
 	}
 
-	
-	
 	@RequestMapping(value = { "/estudiante", "/new" }, method = RequestMethod.GET)
 	public String newEstudiante(Model model) {
 		

@@ -1,6 +1,6 @@
-package com.utng.integradora.service;
+package com.utng.course.service;
 
-import com.utng.integradora.entity.Estudiante;
+import com.utng.course.entity.Estudiante;
 
 public interface IEstudianteService extends IGenericService<Estudiante, String>{
 

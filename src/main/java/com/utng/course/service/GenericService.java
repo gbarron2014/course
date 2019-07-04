@@ -1,10 +1,10 @@
-package com.utng.integradora.service;
+package com.utng.course.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.utng.integradora.dao.IGenericDao;
+import com.utng.course.dao.IGenericDao;
 
 import java.util.List;
 

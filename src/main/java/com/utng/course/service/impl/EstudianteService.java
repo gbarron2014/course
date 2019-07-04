@@ -1,14 +1,14 @@
-package com.utng.integradora.service.impl;
+package com.utng.course.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.utng.integradora.dao.IEstudianteDao;
-import com.utng.integradora.dao.IGenericDao;
-import com.utng.integradora.entity.Estudiante;
-import com.utng.integradora.service.GenericService;
-import com.utng.integradora.service.IEstudianteService;
+import com.utng.course.dao.IEstudianteDao;
+import com.utng.course.dao.IGenericDao;
+import com.utng.course.entity.Estudiante;
+import com.utng.course.service.GenericService;
+import com.utng.course.service.IEstudianteService;
 
 @Service
 public class EstudianteService extends GenericService<Estudiante, String> implements IEstudianteService{

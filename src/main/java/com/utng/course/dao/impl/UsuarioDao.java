@@ -1,4 +1,4 @@
-package com.utng.integradora.dao.impl;
+package com.utng.course.dao.impl;
 
 import javax.sql.DataSource;
 
@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.utng.integradora.entity.Usuario;
+import com.utng.course.entity.Usuario;
 
 /**
  * Clase que permite acceder a la base de datos.

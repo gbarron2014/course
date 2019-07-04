@@ -1,4 +1,4 @@
-package com.utng.integradora.configuration;
+package com.utng.course.config;
 
 import java.util.Properties;
 
@@ -17,11 +17,11 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.utng.integradora.entity.Estudiante;
+import com.utng.course.entity.Estudiante;
  
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.utng.integradora.configuration" })
+@ComponentScan({ "com.utng.course.config" })
 @PropertySource(value = { "classpath:hibernate.properties" })
 public class HibernateConfiguration {
  
@@ -35,7 +35,7 @@ public class HibernateConfiguration {
 	    public LocalSessionFactoryBean sessionFactory() {
 	        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 	        sessionFactory.setDataSource(dataSource());
-	        sessionFactory.setPackagesToScan(new String[] { "com.utng.integradora.entity" });
+	        sessionFactory.setPackagesToScan(new String[] { "com.utng.course.entity" });
 	        sessionFactory.setHibernateProperties(hibernateProperties());
 	        return sessionFactory;
 	     }
