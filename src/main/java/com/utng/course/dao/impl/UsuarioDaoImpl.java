@@ -16,12 +16,12 @@ import com.utng.course.entity.Usuario;
  * @author 19 de Junio 2019
  *
  */
-public class UsuarioDao {
+public class UsuarioDaoImpl {
 
-	private static final Logger logger = LoggerFactory.getLogger(UsuarioDao.class);
+	private static final Logger logger = LoggerFactory.getLogger(UsuarioDaoImpl.class);
 	private JdbcTemplate jt; /* objeto de conectividad a la Base de datos */
 
-	public UsuarioDao(DataSource ds) {
+	public UsuarioDaoImpl(DataSource ds) {
 		jt = new JdbcTemplate(ds);
 	}
 

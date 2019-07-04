@@ -11,18 +11,18 @@ import com.utng.course.service.GenericService;
 import com.utng.course.service.IEstudianteService;
 
 @Service
-public class EstudianteService extends GenericService<Estudiante, String> implements IEstudianteService{
+public class EstudianteServiceImpl extends GenericService<Estudiante, String> implements IEstudianteService{
 
 	private IEstudianteDao estudianteDao;
 
 	@Autowired
-	public EstudianteService(
-			@Qualifier("estudianteDao") IGenericDao<Estudiante, String> genericDao) {
+	public EstudianteServiceImpl(
+			@Qualifier("estudianteDaoImpl") IGenericDao<Estudiante, String> genericDao) {
 		super(genericDao);
 		this.estudianteDao = (IEstudianteDao) genericDao;
 	}
 
-	public EstudianteService() {
+	public EstudianteServiceImpl() {
 	}
 	
 	

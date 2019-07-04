@@ -8,6 +8,6 @@ import com.utng.course.dao.IEstudianteDao;
 import com.utng.course.entity.Estudiante;
 
 @Repository
-public class EstudianteDao extends GenericDao<Estudiante, String> implements IEstudianteDao{	
+public class EstudianteDaoImpl extends GenericDao<Estudiante, String> implements IEstudianteDao{	
 		
 }

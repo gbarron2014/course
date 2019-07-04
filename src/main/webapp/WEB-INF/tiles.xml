@@ -70,5 +70,13 @@
 		<put-attribute name="body"
 			value="/WEB-INF/views/estudiante/add.jsp" />
 	</definition>
-
+	
+	<!-- menu -->
+	<!-- Agregar estudiante  -->
+	<definition name="listMenu" extends="base-definition">
+		<put-attribute name="title"
+			value="Menus" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/menu/list.jsp" />
+	</definition>
 </tiles-definitions>
